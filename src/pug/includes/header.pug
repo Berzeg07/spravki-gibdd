@@ -1,1 +1,154 @@
-p Шапка
+header.header
+    .header__top.container
+        .column
+            .logo.logo_desc
+                .logo__img
+                    img(src="img/logo.png")
+                ul.logo__article
+                    li Гибдд
+                    li Справки
+            ul.exp
+                li работаем
+                li 15
+                li лет
+
+        .column
+            ul.top-nav
+                li
+                    a(href="#").top-nav__about О клинике
+                li
+                    a(href="#").top-nav__price Цены
+                li
+                    a(href="#").top-nav__list Список врачей
+                li
+                    a(href="#").top-nav__adress Адреса филиалов на карте
+
+            a(href="#").top-btn 
+                |Записаться на водительскую медкомиссию онлайн
+
+        .column
+            .license-logo.license-logo_desc
+                .license-logo__img
+                    img(src="img/piece-logo.png")
+                .license-logo__article 
+                    |Лицензия департамента здравоохранения города Москвы
+
+            ul.header-info
+                li
+                    a(href="tel:78005114026").phone-link 8 (800) 511-40-26
+                li
+                    .work-time
+                        p Пн-Пт: с 9:00 до 21:00
+                        p Сб-Вс: с 10:00 до 20:00
+
+    .header__bottom
+        .container
+            ul.main-nav
+                li
+                    a(href="#").main-nav__gibdd Медсправка для ГИБДД (форма 003-В/у)
+                li
+                    a(href="#").main-nav__weapon Медсправка на оружие
+                li
+                    a(href="#").main-nav__pop Популярные медсправки
+                li
+                    a(href="#").main-nav__work Справки на работу
+                li
+                    a(href="#").main-nav__hosp Больничные листы
+
+
+.header-mob
+    .header-mob__top
+        button(type="button").burger
+
+        .logo.logo_mob
+            .logo__img
+                img(src="img/logo.png")
+            ul.logo__article
+                li Гибдд
+                li Справки
+
+        a(href="tel:88005114026").phone-mob
+
+    .header-mob__bottom
+        ul.exp.exp_mob
+            li работаем
+            li 15
+            li лет
+
+        .license-logo
+            .license-logo__img
+                img(src="img/piece-logo.png")
+            .license-logo__article 
+                |Лицензия департамента здравоохранения города Москвы
+
+.dropdown-menu
+    .dropdown-menu__top
+        a(href="tel:78005114026").phone-link 8 (800) 511-40-26
+
+    ul.mobnav-list
+        li
+            a(href="#").main-nav__gibdd Медсправка для ГИБДД (форма 003-В/у)
+            ul.mobnav-list__dropdown
+                li
+                    a(href="#") Справка для категорий А, А1, В, В1, М, ВЕ
+                li
+                    a(href="#") Медсправка на оружие 002-О/у
+                li
+                    a(href="#") Справка на работу 086/у 
+                li
+                    a(href="#") Справка на госслужбу 001 гс/у
+
+        li
+            a(href="#").main-nav__weapon Медсправка на оружие
+            ul.mobnav-list__dropdown
+                li
+                    a(href="#") Справка для категорий А, А1, В, В1, М, ВЕ
+                li
+                    a(href="#") Медсправка на оружие 002-О/у
+                li
+                    a(href="#") Справка на работу 086/у 
+                li
+                    a(href="#") Справка на госслужбу 001 гс/у
+        li
+            a(href="#").main-nav__pop Популярные медсправки
+            ul.mobnav-list__dropdown
+                li
+                    a(href="#") Справка для категорий А, А1, В, В1, М, ВЕ
+                li
+                    a(href="#") Медсправка на оружие 002-О/у
+                li
+                    a(href="#") Справка на работу 086/у 
+                li
+                    a(href="#") Справка на госслужбу 001 гс/у
+        li
+            a(href="#").main-nav__work Справки на работу
+            ul.mobnav-list__dropdown
+                li
+                    a(href="#") Справка для категорий А, А1, В, В1, М, ВЕ
+                li
+                    a(href="#") Медсправка на оружие 002-О/у
+                li
+                    a(href="#") Справка на работу 086/у 
+                li
+                    a(href="#") Справка на госслужбу 001 гс/у
+        li
+            a(href="#").main-nav__hosp Больничные листы
+            ul.mobnav-list__dropdown
+                li
+                    a(href="#") Справка для категорий А, А1, В, В1, М, ВЕ
+                li
+                    a(href="#") Медсправка на оружие 002-О/у
+                li
+                    a(href="#") Справка на работу 086/у 
+                li
+                    a(href="#") Справка на госслужбу 001 гс/у
+
+    ul.mobnav-links
+        li
+            a(href="#").top-nav__about О клинике
+        li
+            a(href="#").top-nav__price Цены
+        li
+            a(href="#").top-nav__list Список врачей
+        li
+            a(href="#").top-nav__adress Адреса филиалов на карте
