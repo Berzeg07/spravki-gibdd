@@ -5,9 +5,8 @@ $(document).ready(function () {
         $('.dropdown-menu').toggleClass('is-active');
     });
 
-
-    $(".mobnav-list a").click(function () {
-
+    $(".mobnav-list a").click(function (e) {
+        e.preventDefault();
         var $this = $(this);
         var elem = $(this).next();
 
@@ -18,7 +17,8 @@ $(document).ready(function () {
 
         $this.toggleClass("is-active");
         elem.slideToggle();
-
     });
+
+    $('.form-select select').selectric();
 
 });

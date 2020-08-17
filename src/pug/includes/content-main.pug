@@ -1,1 +1,59 @@
+main
+    .top-banner
+        .bmw-img
+            img(src="img/bmw.png")
 
+        .container
+            .doc-img
+                img(src="img/girl.png")
+
+            .top-banner__title
+                p Медсправка водительская по новой форме 003-в/у
+                p для категорий А, А1, В, В1, М, ВЕ
+
+            .top-banner__cont
+                .column
+                    form.form-top(action="#" method="POST")
+                        input(type="text" placeholder="Ваше имя").inp.inp_name.form-top__item
+                        input(type="text" placeholder="Контактный телефон").inp.inp_phone.form-top__item
+
+                        .form-select.form-top__item
+                            select 
+                                option(value="Справка для категорий А, А1, В, В1, М, ВЕ (003-в/у)") Справка для категорий А, А1, В, В1, М, ВЕ (003-в/у)
+                                option(value="test") test 1
+                                option(value="test") test 2
+
+                        .form-select.form-top__item
+                            select 
+                                option(value="Выберите ближайший медцентр") Выберите ближайший медцентр
+                                option(value="test") test 1
+                                option(value="test") test 2
+
+                        button.form-top-btn(type="submit") Записаться на комиссию
+
+                        .privacy Нажимая на кнопку «Записаться на комиссию», вы принимаете условия передачи и 
+                            a(href="#") обработки информации
+
+                .column
+                    .top-banner__sub-title 
+                        span с наркологом и психиатором одно окно
+
+                    .docs-block
+                        .docs-block__title Список каких врачей нужно проходить:
+
+                        ul.docs-block__list
+                            li осмотр психиатра
+                            li осмотр нарколога
+                            li осмотр офтальмолога
+                            li осмотр терапевта
+
+                        ul.about-work.about-work__blue
+                            li Время оформления:
+                            li от 20 мин.
+
+                        ul.about-work.about-work__pink
+                            li Стоимость медкомиссии:
+                            li от 1200 руб.
+
+                    .about-terms 
+                        |Мы не продаем справки. Для получения справки нужно обязательно пройти медосмотр.
