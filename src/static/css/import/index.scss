@@ -5,6 +5,18 @@
     padding: 0 16px;
 }
 
+.cont-title {
+    font-family: "helveticaneuecyr";
+    font-weight: 500;
+    color: #2252B2;
+    font-size: 22px;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
 .header {
     @media(max-width: 1279px) {
         display: none;
@@ -936,5 +948,561 @@
                 padding-left: 44px;
             }
         }
+    }
+}
+
+.cont-txt {
+    font-family: "helveticaneuecyr";
+    font-weight: 400;
+    color: #717171;
+    line-height: 28px;
+}
+
+.about-doc {
+    padding-top: 37px;
+    padding-bottom: 15px;
+
+    @media(min-width: 768px) {
+        padding-bottom: 53px;
+    }
+
+    .cont-title {
+        margin-bottom: 9px;
+
+        @media(min-width: 768px) {
+            margin-bottom: 21px;
+        }
+    }
+}
+
+.stages {
+    padding-top: 28px;
+    padding-bottom: 40px;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 6;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(218, 248, 255, 0.9);
+        z-index: 5;
+    }
+
+    .cont-title {
+        margin-bottom: 28px;
+
+        @media(min-width: 992px) {
+            margin-bottom: 164px;
+        }
+    }
+
+    @media(min-width: 768px) {
+        padding-top: 38px;
+        padding-bottom: 56px;
+    }
+
+    @media(min-width: 992px) {
+        background: url('../img/medspravka.jpg') no-repeat center;
+        background-size: cover;
+        padding-bottom: 97px;
+    }
+}
+
+.stages__item {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media(min-width: 992px) {
+        position: absolute;
+    }
+}
+
+.stages__icon {
+    margin-bottom: 12px;
+}
+
+.stages__article {
+    font-family: "SFProDisplay";
+    font-weight: 500;
+    color: #504B5A;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.stages__work-time,
+.docs-block__list_stages {
+    display: inline-block;
+}
+
+.docs-block__list_stages {
+    text-align: left;
+}
+
+.stages__time,
+.stages__price {
+    font-family: "helveticaneuecyr";
+    font-weight: 500;
+    color: #504B5A;
+
+    li {
+        &:first-child {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        &:last-child {
+            font-size: 30px;
+        }
+    }
+}
+
+.stages__time {
+    li {
+        &:last-child {
+            color: #1771E6;
+        }
+    }
+}
+
+.stages__price {
+    li {
+        &:last-child {
+            color: #FE0199;
+        }
+    }
+}
+
+.stages__payment {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 115px;
+    margin: 0 auto;
+
+    li {
+        margin-bottom: 17px;
+        margin-right: 16px;
+    }
+}
+
+.stage-sircle {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    border-radius: 100%;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 52%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        background: url('../img/star-bg.png') no-repeat center;
+        width: 650px;
+        height: 645px;
+    }
+}
+
+.stage-sircle__num {
+    font-family: "TTNorms";
+    font-weight: 600;
+    font-size: 50px;
+    position: absolute;
+}
+
+.stages__icon_cl {
+    position: absolute;
+    left: 216px;
+    top: 36px;
+}
+
+.stage-sircle__num_one {
+    color: #856DBD;
+    left: 234px;
+    top: 130px;
+}
+
+.stages__icon_rm {
+    position: absolute;
+    left: 391px;
+    top: 167px;
+}
+
+.stage-sircle__num_two {
+    color: #FFC01E;
+    left: 318px;
+    top: 197px;
+}
+
+.stages__icon_dc {
+    position: absolute;
+    left: 327px;
+    top: 364px;
+}
+
+.stage-sircle__num_three {
+    color: #A0D261;
+    left: 284px;
+    top: 301px;
+}
+
+.stages__icon_dl {
+    position: absolute;
+    left: 105px;
+    top: 364px;
+}
+
+.stage-sircle__num_four {
+    color: #C88EA7;
+    left: 175px;
+    top: 301px;
+}
+
+.stages__payment_py {
+    position: absolute;
+    left: 37px;
+    top: 167px;
+}
+
+.stage-sircle__num_five {
+    color: #60D0F4;
+    left: 145px;
+    top: 197px;
+}
+
+.stage-sircle {
+    @media(max-width: 991px) {
+        display: none;
+    }
+}
+
+.stages__item {
+
+    .stages__icon,
+    .stages__payment {
+        @media(min-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.stages__inner {
+    position: relative;
+    max-width: 1105px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media(min-width: 992px) {
+
+    .stages__item_first {
+        top: -115px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .stages__item_second {
+        top: 70px;
+        right: 0;
+    }
+
+    .stages__item_third {
+        top: 350px;
+        right: 0;
+    }
+
+    .stages__item_fourth {
+        top: 350px;
+        left: 0;
+    }
+
+    .stages__item_fives {
+        top: 70px;
+        left: 0;
+    }
+}
+
+@media(min-width: 1280px) {
+    .stages__item_third {
+        right: 34px;
+    }
+}
+
+.advantages {
+    padding-top: 33px;
+
+    .cont-title {
+        margin-bottom: 43px;
+
+        @media(min-width: 768px) {
+            margin-bottom: 75px;
+        }
+    }
+
+    @media(min-width: 768px) {
+        padding-top: 76px;
+    }
+}
+
+.advantage-slider-wrap {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .swiper-wrapper {
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+}
+
+.advantage-slider {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width: 767px) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.advantage-slider__icon {
+    margin-right: 22px;
+}
+
+.advantage-slider__article {
+    li {
+        &:first-child {
+            font-family: "TTNorms";
+            font-weight: 600;
+            color: #FE0199;
+            font-size: 40px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        &:last-child {
+            font-family: "SFProDisplay";
+            font-weight: 400;
+            font-size: 18px;
+            color: #504B5A;
+        }
+    }
+}
+
+.swiper-button-next {
+    width: 32px;
+    height: 32px;
+    background: url('../img/arrow-right.png') no-repeat center;
+    right: 20px;
+
+    @media(min-width: 1600px) {
+        right: 40px;
+    }
+}
+
+.swiper-button-prev {
+    width: 32px;
+    height: 32px;
+    background: url('../img/arrow-left.png') no-repeat center;
+    left: 20px;
+
+    @media(min-width: 1600px) {
+        left: 40px;
+    }
+}
+
+.price-table {
+    width: 100%;
+}
+
+.our-price {
+    padding-top: 48px;
+
+    .cont-title {
+        margin-bottom: 36px;
+    }
+
+    @media(min-width: 992px) {
+        padding-top: 79px;
+    }
+}
+
+.our-price__link {
+    font-family: "SFProDisplay";
+    font-weight: 600;
+    color: #2252B2;
+    font-size: 18px;
+    margin-bottom: 13px;
+
+    @media(max-width: 991px) {
+        text-align: center;
+    }
+
+    a {
+        display: inline-block;
+        border-bottom: 2px solid #2252B2;
+    }
+}
+
+.price-table {
+    thead {
+        tr {
+            th {
+                font-family: "SFProDisplay";
+                font-weight: 400;
+                height: 60px;
+                background: #57BE92;
+                color: #FFFFFF;
+                font-size: 18px;
+                text-align: center;
+
+                &:first-child {
+                    border-radius: 8px 0px 0px 0px;
+                    text-align: left;
+                    padding-left: 22px;
+
+                    @media(max-width: 991px) {
+                        text-align: center;
+                        padding-left: 0;
+                        border-radius: 8px 8px 0px 0px;
+                    }
+                }
+
+                &:last-child {
+                    border-radius: 0px 8px 0px 0px;
+                }
+
+                @media(max-width: 991px) {
+                    &:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            @media(max-width: 991px) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            @media(min-width:992px) {
+                &:hover {
+                    .price-table__btn {
+                        visibility: visible;
+                    }
+                }
+            }
+
+            &:nth-child(2n+1) {
+                background: #EDF9FF;
+            }
+
+            td {
+                font-family: "SFProDisplay";
+                font-weight: 400;
+                color: #717171;
+                font-size: 18px;
+                height: 70px;
+
+                @media(max-width: 767px) {
+
+                    &:first-child {
+                        width: 100%;
+                    }
+
+                    &:nth-child(3),
+                    &:last-child {
+                        width: 50%;
+
+                    }
+                }
+
+                @media(max-width: 991px) {
+                    display: block;
+                    height: auto;
+                    padding: 19px 0px;
+
+                    &:nth-child(2) {
+                        width: 100%;
+                        order: 1;
+                        text-align: center;
+                    }
+
+                    &:nth-child(3),
+                    &:last-child {
+                        padding: 0 15px;
+                    }
+                }
+
+                &:first-child {
+                    padding-left: 22px;
+
+                    @media(max-width: 991px) {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+
+                &:not(:first-child) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.price-table__btn {
+    font-family: "SFProDisplay";
+    font-weight: 400;
+    width: 247px;
+    height: 51px;
+    background: #FFDD2D;
+    border-radius: 6px;
+    color: #504B5A;
+    font-size: 16px;
+
+    @media(min-width:992px) {
+        visibility: hidden;
+    }
+
+    @media(min-width:992px) and (max-width: 1279px) {
+        width: 155px;
+    }
+}
+
+.price-table__mb {
+    font-family: "SFProDisplay";
+    font-weight: 600;
+    color: #009688;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+    @media(min-width: 992px) {
+        display: none;
     }
 }
