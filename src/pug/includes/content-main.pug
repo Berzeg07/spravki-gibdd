@@ -451,4 +451,48 @@ main
                         |с 9:00 до 21:00
                     td
                         .service-data-mb Виды медсправок:
-                        a(href="#") Справка для категорий А, А1, В, В1, М, ВЕ, медсправка на оружие 002-О/у, справка на работу 086/у, cправка на госслужбу 001 гс/у
+                        a(href="#") 
+                            |Справка для категорий А, А1, В, В1, М, ВЕ, медсправка на оружие 002-О/у, справка на работу 086/у, cправка на госслужбу 001 гс/у
+
+    .form-action-wrap.container
+        form.form-action(action="#" method="POST")
+            .form-action__left
+                .form-action__title 
+                    |Отправьте заявку - водительская справка через 20 минут!
+
+                .form-action__top
+                    .column
+                        .form-action__inp-block
+                            input(type="text" placeholder="Ваше имя").inp.inp_name.form-top__item
+                            input(type="text" placeholder="Контактный телефон").inp.inp_phone.form-top__item
+
+                        textarea(placeholder="Комментарий...").textarea
+                    .column
+                        .form-select.form-top__item
+                            select 
+                                option(value="Справка для категорий А, А1, В, В1, М, ВЕ (003-в/у)")
+                                    |Справка для категорий А, А1, В, В1, М, ВЕ (003-в/у)
+                                option(value="test") test 1
+                                option(value="test") test 2
+
+                        .form-select.form-top__item
+                            select 
+                                option(value="Выберите ближайший медцентр") 
+                                    |Выберите медицинский центр
+                                option(value="test") test 1
+                                option(value="test") test 2
+
+                .form-action__bottom
+                    .column
+                        button(type="submit").form-top-btn
+                            |Записаться на комиссию
+
+                    .column
+                        .form-action__privacy 
+                            |Нажимая на кнопку «Записаться на комиссию», вы принимаете<br> условия передачи и 
+                            a(href="#") обработки информации
+
+            .form-action__right
+                img(src="img/smile.png")
+
+
