@@ -34,10 +34,6 @@ $(document).ready(function () {
                     nextEl: '.swiper-button-next-adv',
                     prevEl: '.swiper-button-prev-adv',
                 },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
 
                 breakpoints: {
 
@@ -67,6 +63,40 @@ $(document).ready(function () {
     //Swiper plugin initialization on window resize
     $(window).on('resize', function () {
         initSwiper();
+    });
+
+    var docSlider = new Swiper('.specialist-slider', {
+        slidesPerView: 5,
+        spaceBetween: 90,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next-sp',
+            prevEl: '.swiper-button-prev-sp',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        breakpoints: {
+            499: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+
+            },
+            1599: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            }
+        }
     });
 
 });
