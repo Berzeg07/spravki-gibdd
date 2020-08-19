@@ -140,7 +140,8 @@
 }
 
 .top-nav a,
-.mobnav-links a {
+.mobnav-links a,
+.footer-nav a {
     display: inline-block;
     position: relative;
     padding-left: 29px;
@@ -267,7 +268,8 @@
 }
 
 .main-nav a,
-.mobnav-list a {
+.mobnav-list a,
+.footer__title a {
     font-family: "SFProDisplay";
     font-weight: 500;
     display: inline-block;
@@ -286,6 +288,10 @@
         width: 32px;
         height: 32px;
     }
+}
+
+.footer__title a {
+    font-size: 16px;
 }
 
 .main-nav__gibdd:after {
@@ -1976,5 +1982,218 @@
                 border-bottom: 1px solid white;
             }
         }
+    }
+}
+
+.my-map {
+    position: relative;
+    width: 100%;
+    height: 455px;
+}
+
+.my-map__img {
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.my-map__img img {
+    height: 100%;
+    object-fit: cover;
+
+    font-family: 'object-fit: cover';
+}
+
+.my-map__current-map {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.map h2 {
+    margin-bottom: 30px;
+}
+
+.map-img {
+    background: #FE0199;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    position: relative;
+    left: -24px;
+    top: -24px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 20px;
+        height: 20px;
+
+        background-image: url("../img/cross.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+    }
+
+    &:hover {
+        background: #1771E6;
+    }
+}
+
+.map-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.map-header a {
+    font-family: SFProDisplay;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FF3339;
+    border-bottom: 1px solid #FF3339;
+    margin: 0;
+}
+
+.map-footer {
+    position: relative;
+    padding-left: 19px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        width: 10px;
+        height: 10px;
+        background-color: #B4D445;
+        border-radius: 50%;
+    }
+}
+
+.map-footer a {
+    font-family: SFProDisplay;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(95, 96, 97, 0.94);
+    border-bottom: 1px solid rgba(95, 96, 97, 0.47);
+}
+
+.map-middle {
+    display: flex;
+}
+
+.map-middle span {
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.map-middle ul {
+    display: flex;
+    margin-left: 8px;
+}
+
+.footer {
+    margin-top: 24px;
+    padding: 45px 27px;
+    background: linear-gradient(180deg, rgba(124, 237, 217, 0.25) 0%, rgba(218, 248, 255, 0) 100%);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+        width: 14%;
+
+        &:first-child {
+            width: 22%;
+        }
+    }
+
+    @media(max-width: 1279px) {
+        display: none;
+    }
+}
+
+.footer__title {
+    margin-bottom: 30px;
+
+    a {
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: #1771E6;
+            border-bottom: 1px solid #1771E6;
+        }
+    }
+}
+
+.footer-list {
+    li {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    a {
+        color: #7A8C98;
+    }
+}
+
+.footer__phone {
+    padding-top: 83px;
+    padding-bottom: 63px;
+}
+
+.footer-bottom {
+    @media(min-width: 1280px) {
+        border-top: 1px solid #DADADA;
+        padding-top: 33px;
+        padding-bottom: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.copyright {
+    font-family: "SFProDisplay";
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(113, 113, 113, 0.57);
+
+    @media(max-width: 1279px) {
+        text-align: center;
+    }
+}
+
+.metr {
+    @media(max-width: 1279px) {
+        display: none;
     }
 }
